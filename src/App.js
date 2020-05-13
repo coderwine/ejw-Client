@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import {Button, Form, Input} from 'reactstrap';
 import './App.css';
 
-function App() {
+import Jumbo from './components/jumbotron.component';
+
+
+function App(props) {
+
+  const [name, setName] = useState('That Which Cannot Be Named');
+
+  let nameHandler= (input) => {
+    console.log(input)
+    setName(input)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Currently working on injecting a name into the state to pass through to Jumbotron */}
+      <Form onSubmit={() => nameHandler}>
+        <Input type="text" placeholder="Input Name Here"></Input>
+        <Button>Submit</Button>
+      </Form> <br/>
+
+      <Jumbo name={name} />
     </div>
   );
 }

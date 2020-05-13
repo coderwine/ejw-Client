@@ -1,3 +1,25 @@
+## Updated Works & Goals:
+The purpose of this project is to play with React a bit more along with reactstrap, material-ui and injection of various apis so that I can continue to grow my portfolio in a more dynamic fashion.  
+    Some short term goals:
+        - Introductory aspects where users interact with my portfolio
+            (
+                - input name = "greetings {name}"
+                - pull local weather, suggest something nice to wear according to the temp/forcast.
+                - Provide a little dad humor... 
+                - small game of dice
+                - etc.
+            )
+        - Injection of Blog capababilities.
+        - Portfolio layouts
+    Long term goals:
+        - Deployment through AWS
+        - Practice with MongoDB  - will need a small DB structure (perhaps blog aspects).
+
+## Some To-Dos:
+Simplified wireframe.  Small goals to allow for a "playground" to practice and break while building.
+
+STAY MOBILE! but with a clean desktop feel.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
